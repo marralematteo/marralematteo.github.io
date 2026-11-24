@@ -3,6 +3,6 @@
 import { defineConfig } from 'astro/config';
 
 export default defineConfig({
-  site: 'https://matteomarrale.github.io',
+  site: 'https://marralematteo.github.io',
   trailingSlash: 'always',
 });

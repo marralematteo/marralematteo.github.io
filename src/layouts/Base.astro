@@ -84,7 +84,7 @@ const nav = [
  document.querySelectorAll("[data-copy]").forEach(function(b){ b.addEventListener("click", function(){
   var out = b.closest(".l").querySelector(".toast"), it = d.lang === "it";
   function say(m){ out.textContent = m; setTimeout(function(){ out.textContent = ""; }, 3000); }
-  try { navigator.clipboard.writeText("matteo.marrale.1998@gmail.com").then(function(){ say(it ? "Email copiata" : "Email copied"); }, function(){ say(it ? "Seleziona l'indirizzo e copialo" : "Select the address and copy it"); }); }
+  try { navigator.clipboard.writeText("matteomarrale8991@gmail.com").then(function(){ say(it ? "Email copiata" : "Email copied"); }, function(){ say(it ? "Seleziona l'indirizzo e copialo" : "Select the address and copy it"); }); }
   catch(e){ say(it ? "Seleziona l'indirizzo e copialo" : "Select the address and copy it"); }
  }); });
 })();

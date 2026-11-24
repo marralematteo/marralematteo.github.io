@@ -106,9 +106,9 @@ const role = 'Junior QA Tester | Game Designer';
 const jsonLd = {
   '@context': 'https://schema.org', '@type': 'Person', name: 'Matteo Marrale',
   url: Astro.site!.href, image: new URL('/foto-profilo.jpg', Astro.site).href, jobTitle: role,
-  email: 'mailto:matteo.marrale.1998@gmail.com',
+  email: 'mailto:matteomarrale8991@gmail.com',
   affiliation: { '@type': 'EducationalOrganization', name: 'Digital Bros Game Academy', address: { '@type': 'PostalAddress', addressLocality: 'Milano', addressCountry: 'IT' } },
-  sameAs: ['https://www.linkedin.com/in/matteomarrale/', 'https://github.com/matteomarrale', 'https://matteomarrale.itch.io'],
+  sameAs: ['https://www.linkedin.com/in/matteomarrale/', 'https://github.com/marralematteo', 'https://marralematteo.itch.io'],
 };
 ---
 <Base title={`Matteo Marrale — ${role}`} path="/" jsonLd={jsonLd}
@@ -201,12 +201,12 @@ const jsonLd = {
 {langs.map((l) => (
   <div class="l" lang={l}>
     <h2>{T[l].contact}</h2>
-    <a class="mail" href="mailto:matteo.marrale.1998@gmail.com">matteo.marrale.1998@gmail.com</a>
+    <a class="mail" href="mailto:matteomarrale8991@gmail.com">matteomarrale8991@gmail.com</a>
     <div class="links">
       <button class="cta" type="button" data-copy>{T[l].copy}</button>
       <a href="https://www.linkedin.com/in/matteomarrale/" target="_blank" rel="me noopener">LinkedIn</a>
-      <a href="https://github.com/matteomarrale" target="_blank" rel="me noopener">GitHub</a>
-      <a href="https://matteomarrale.itch.io" target="_blank" rel="me noopener">Itch.io</a>
+      <a href="https://github.com/marralematteo" target="_blank" rel="me noopener">GitHub</a>
+      <a href="https://marralematteo.itch.io" target="_blank" rel="me noopener">Itch.io</a>
       <a href={T[l].cv} target="_blank" rel="noopener" hreflang={l}>{T[l].cvBtn}</a>
     </div>
     <p class="toast" role="status" aria-live="polite"></p>
